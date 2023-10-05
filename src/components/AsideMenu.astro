@@ -1,7 +1,15 @@
 ---
 import JobPreviewCard from "./JobPreviewCard.astro";
+import AngleLeft from "@/icons/AngleLeft.astro";
+
 ---
 
+<div class="flex bg-white items-center py-2 px-2 gap-1 sticky top-0 border-b">
+  <a href="/" class="rounded-full hover:bg-gray-100 p-3">
+    <AngleLeft />
+  </a>
+  Volver a la búsqueda de empleo 
+</div>
 <ul class="flex-col mx-4">
   {['', '', '', '', '', '', '', '', ''].map((playlist) => <JobPreviewCard />)}
 </ul>
