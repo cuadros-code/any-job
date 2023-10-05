@@ -12,6 +12,12 @@
       "@/icons": [
         "src/icons/*"
       ],
+      "@/config": [
+        "src/config/*"
+      ],
+      "@/store": [
+        "src/store/*"
+      ],
     }
   }
 }

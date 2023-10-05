@@ -1,4 +1,5 @@
 <script>
+  import { userAuth } from "@/store/auth";
   
   let isOpenMenu = false;
   let isOpenProfileOptions = false
@@ -52,12 +53,20 @@
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-        <a 
-          href="/auth/login"
-          class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 transition-all duration-200"
-        >
-          Iniciar sesion
-        </a>
+        {#if $userAuth}
+          <button
+            class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 transition-all duration-200"
+          >
+            Cerrar sesion
+          </button>
+        {:else}
+          <a 
+            href="/auth/login"
+            class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium  hover:bg-gray-700 transition-all duration-200"
+          >
+            Iniciar sesion
+          </a>
+        {/if}
 
         <!-- <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
           <span class="absolute -inset-1.5"></span>
@@ -97,9 +106,9 @@
   {#if isOpenMenu === true}
     <div class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="#" class="text-gray-900 block px-3 py-2 text-sm font-medium">Trabajos</a>
-        <a href="#" class="text-gray-900 block px-3 py-2 text-sm font-medium">Proyectos</a>
-        <a href="#" class="text-gray-900 block px-3 py-2 text-sm font-medium">Ubicaciones</a>
+        <a href="/" class="text-gray-900 block px-3 py-2 text-sm font-medium">Trabajos</a>
+        <a href="/" class="text-gray-900 block px-3 py-2 text-sm font-medium">Proyectos</a>
+        <a href="/" class="text-gray-900 block px-3 py-2 text-sm font-medium">Ubicaciones</a>
         </div>
     </div>
   {/if}
