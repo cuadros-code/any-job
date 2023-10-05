@@ -7,8 +7,6 @@ dist/
 # dependencies
 node_modules/
 
-src/config/firebase-config
-
 # logs
 npm-debug.log*
 yarn-debug.log*

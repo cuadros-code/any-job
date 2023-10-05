@@ -89,7 +89,7 @@
                 <a href="/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
                 <a href="/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
                 <a href="/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-                <a href="/" class="block bg-gray-900 mx-2 rounded-lg px-4 py-2 text-sm text-white" role="menuitem" tabindex="-1" id="user-menu-item-3">Cerrar sesion</a>
+                <a href="/" class="block bg-gray-900 mx-2 rounded-lg px-4 py-2 text-sm text-white">Cerrar sesion</a>
               </div>
               {/if}
             </div>
