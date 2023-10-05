@@ -1,11 +1,12 @@
 <script>
-  import { googleAuthprovider } from "@/config/firebase-config";
+	import { googleAuthprovider } from "@/config/firebase-config";
   import { userAuth } from "@/store/auth";
   import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-  const auth = getAuth();
-
+	
   function signInWithGoogle() {
+		
+		const auth = getAuth();
 
     signInWithPopup(auth, googleAuthprovider)
       .then((result) => {
@@ -29,9 +30,9 @@
 
 </script>
 
-<div class="bg-gray-100 min-h-screen flex items-center justify-center">
+<div class="flex items-center justify-center mt-6">
 		<div
-			class="max-w-sm rounded-lg shadow-lg bg-white p-6 space-y-6 border border-gray-200 dark:border-gray-700"
+			class="max-w-sm rounded-lg bg-white p-6 space-y-6 border border-gray-300 "
 		>
 			<div class="space-y-2 text-center">
 				<h1 class="text-3xl font-bold">Iniciar sesion</h1>
@@ -77,25 +78,15 @@
 				</div>
 				<div class="flex items-center space-x-2">
 					<hr class="flex-grow border-zinc-200 dark:border-zinc-700" />
-					<span class="text-zinc-400 dark:text-zinc-300 text-sm"> OR</span>
+					<span class="text-zinc-400 dark:text-zinc-300 text-sm"> O</span>
 					<hr class="flex-grow border-zinc-200 dark:border-zinc-700" />
 				</div>
 				<button
           on:click={signInWithGoogle}
-					class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full bg-[#4285F4] text-white"
+					class="inline-flex items-center justify-center rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full bg-[#4285F4] text-white"
 				>
 					<div class="flex items-center justify-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="w-5 h-5 mr-2"
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"
 						>
 							<circle cx="12" cy="12" r="10"></circle>
 							<circle cx="12" cy="12" r="4"></circle>
@@ -103,7 +94,7 @@
 							<line x1="3.95" x2="8.54" y1="6.06" y2="14"></line>
 							<line x1="10.88" x2="15.46" y1="21.94" y2="14"></line>
 						</svg>
-						 Login with Google
+						 Iniciar sesion con Google
 					</div>
 				</button>
 			</div>

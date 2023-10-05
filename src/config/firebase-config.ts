@@ -6,7 +6,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 const firebaseConfig = {
-
+  apiKey: "AIzaSyAeSAEEa2zF7r_udj2sRmxB_evLOlzmhAc",
+  authDomain: "any-job-5c685.firebaseapp.com",
+  projectId: "any-job-5c685",
+  storageBucket: "any-job-5c685.appspot.com",
+  messagingSenderId: "898387265740",
+  appId: "1:898387265740:web:65093a68bbd15b6e649a69",
+  measurementId: "G-3ZLENG1VSM"
 };
 
 // Initialize Firebase
