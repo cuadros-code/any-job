@@ -36,14 +36,6 @@
 		>
 			<div class="space-y-2 text-center">
 				<h1 class="text-3xl font-bold">Iniciar sesion</h1>
-				<p class="text-zinc-500 dark:text-zinc-400">
-					By logging in, you accept our
-					<a class="text-blue-500 hover:text-blue-700" href="/">terms</a>
-					 and
-					<a class="text-blue-500 hover:text-blue-700" href="/"
-						>privacy policy</a
-					>.
-				</p>
 			</div>
 			<div class="space-y-4">
 				<div class="space-y-2">
